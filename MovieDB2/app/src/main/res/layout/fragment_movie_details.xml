@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons_movie_details_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_6c6e3114130c39e31b403a85659599c"
+    tools:context=".view.fragments.MovieDetailsFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageviewtampilback"
+                android:layout_width="411dp"
+                android:layout_height="251dp"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/judultampil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="-240dp"
+                android:background="#C87CD5"
+                android:text="JUDUL"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="#F16AA0"
+                android:text="TextView"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageviewdepn"
+                android:layout_width="113dp"
+                android:layout_height="193dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="110dp"
+                android:src="@android:drawable/ic_menu_report_image" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="-155dp"
+                android:background="#909175"
+                android:shadowRadius="100"
+                android:text="Genre :"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/genretampil"
+                android:layout_width="167dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="-25dp"
+                android:background="#909175"
+                android:shadowRadius="100"
+                android:text="tampil genre"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="Release Date :"
+                android:textColor="#FFB700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateRtampil"
+                android:layout_width="117dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-17dp"
+                android:text="Date"
+                android:textColor="#FFB700"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="11dp"
+                android:text="Avg. Vote :"
+                android:textColor="#FFB700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/avgtampil"
+                android:layout_width="139dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="-17dp"
+                android:text="Avg. Vote"
+                android:textColor="#FFB700"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:text="Popularity :"
+                android:textColor="#FFB700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/populertampil"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="-18dp"
+                android:text="popularity"
+                android:textColor="#FFB700"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitletampil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:text="Sub Title"
+                android:textColor="#57562F" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="20dp"
+                android:text="Production Companies"
+                android:textColor="#009688"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pcompanies"
+                android:layout_width="367dp"
+                android:layout_height="223dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
